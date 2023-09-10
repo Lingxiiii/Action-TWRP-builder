@@ -155,7 +155,7 @@ jobs:
     - name: Check
       run: |
         bash ${GITHUB_WORKSPACE}/scripts/check.sh
-        working-directory: ${{ steps.pwd.outputs.workspace-folder }}
+      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
       continue-on-error: true
       
     - name: Upload to Release
